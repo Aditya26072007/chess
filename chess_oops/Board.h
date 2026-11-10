@@ -19,6 +19,8 @@ public:
     void undoMove(Position from, Position to, std::unique_ptr<Piece> captured);
 
     Position findKing(Color color) const;                // {-1,-1} if not found
+    void placePiece(Position pos, std::unique_ptr<Piece> piece);  // place a piece on a square
+    std::unique_ptr<Piece> removePiece(Position pos);             // remove and return piece
     void printBoard(std::ostream& os = std::cout) const;
 };
 
