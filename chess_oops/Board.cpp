@@ -61,6 +61,16 @@ Position Board::findKing(Color color) const {
     return Position{-1, -1};
 }
 
+void Board::placePiece(Position pos, std::unique_ptr<Piece> piece) {
+    if (pos.isValid())
+        grid[pos.row][pos.col] = std::move(piece);
+}
+
+std::unique_ptr<Piece> Board::removePiece(Position pos) {
+    if (!pos.isValid()) return nullptr;
+    return std::move(grid[pos.row][pos.col]);
+}
+
 void Board::printBoard(std::ostream& os) const {
     os << std::endl << "    a b c d e f g h" << std::endl;
     for (int r = 0; r < 8; r++) {

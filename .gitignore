@@ -1,0 +1,60 @@
+# C++ / Compilers & Build Tools
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# Build Directories
+build/
+build*/
+cmake-build-*/
+out/
+bin/
+
+# CMake Generated Files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Qt Generated Files
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.moc
+*.rcc
+.rcc/
+.moc/
+.obj/
+.pch/
+.uic/
+*.autosave
+.qmake.cache
+.qmake.stash
+**/.qmlls.ini
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.pro.user*
+*.qbs.user*
+CMakeLists.txt.user*
+.qtcreator/
+*.swp
+*~
+*.orig
+*.rej
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
